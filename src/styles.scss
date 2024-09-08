@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;700;900&display=swap" rel="stylesheet';
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet';
+
+@import '../src/color-variables.scss';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+

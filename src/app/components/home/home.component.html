@@ -1,0 +1,39 @@
+<app-header />
+<main>
+  <section class="main-section">
+    <div class="headline">
+      <span class="nexus">Nexus Consulting</span>
+      <h1 class="title">A consultoria que você busca para seu software</h1>
+      <span class="benefit"><b class="benefit-data">95% das empresas</b>  não sabem como lidar com problemas de escalibilidade e grande volume de requisições.</span>
+      <btn-primary btn-text="Fale com nossos especialistas"></btn-primary> 
+    </div>
+    <div class="image-principal">
+      <img ngSrc="/assets/principal.png" width="392" height="411" priority/>
+    </div>
+  </section>
+  <section >
+    <app-newsletter-form></app-newsletter-form>
+  </section>
+  <section class="cards-section">
+    <app-card 
+      [cardImage]="'/assets/team.png'" 
+      [cardTitle]="'Equipe Capacitada'" 
+      [cardText]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna..'"
+    />
+    <app-card 
+      [cardImage]="'/assets/project-guide.png'" 
+      [cardTitle]="'Projetos guiados do zero'" 
+      [cardText]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. '"
+    />
+    <app-card 
+      [cardImage]="'/assets/designer.jpg'" 
+      [cardTitle]="'Com gerencia de projetos'" 
+      [cardText]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.'"
+    />
+  </section>
+  <section class="contact-section">
+    <h2>Quer elevar seu software e seus negócios para outro nível?</h2>
+    <btn-primary btn-text="Fale com nossos especialistas"></btn-primary>
+  </section>
+</main>
+<app-footer/>

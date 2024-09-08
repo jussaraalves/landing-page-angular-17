@@ -1,0 +1,16 @@
+@import '../../../color-variables.scss';
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $background-color;
+  padding: 15px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 140px;
+    height: 40px;
+  }
+}

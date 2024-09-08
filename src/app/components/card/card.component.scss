@@ -1,0 +1,19 @@
+@import "../../../color-variables.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  width: 400px;
+  
+  h3{
+    color: $background-color;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .title{
+    padding-bottom: 40px;
+  }
+}

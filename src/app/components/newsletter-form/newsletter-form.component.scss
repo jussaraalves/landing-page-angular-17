@@ -1,0 +1,100 @@
+@import "../../../color-variables.scss";
+
+.form-section {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 0 200px;
+  background-color: $primary-color;
+  height: 500px;
+  .text {
+    width: 100%;
+    gap: 10px;
+
+    h3 {
+      padding-bottom: 30px;
+      font-size: 36px;
+      font-weight: 600;
+      color: $primary-text;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    p {
+      color: $secondary-text;
+      font-size: 18px;
+      font-weight: 400;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+
+    input {
+      all: unset;
+      box-sizing: border-box;
+
+      border-bottom: 2px solid $primary-text;
+      background: transparent;
+
+      &:focus {
+        outline: none;
+        border-bottom-color: $secondary-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .form-section {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .form-section {
+    padding: 0 50px;
+    height: auto;
+  }
+
+  .text {
+    width: 100%;
+    min-height: auto;
+    h3 {
+      font-size: 28px;
+      padding-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .text {
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  form {
+    width: 100%;
+  }
+  .form-section {
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+}
